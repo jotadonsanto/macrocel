@@ -40,7 +40,7 @@ try {
     $mail->send();
     echo '
     <script>
-    window.history.go(-1);
+    window.location="success.html";
     </script>';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
