@@ -166,6 +166,11 @@ button[type='submit']{
 }
 
 //Responsive
+@media (max-width: 992px){
+    .banner{
+        background-position: -25rem center;
+    }
+}
 @media (max-width: 768px){
     .nav{
         img{

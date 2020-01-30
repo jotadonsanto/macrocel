@@ -127,6 +127,9 @@ button[type='submit'] {
     border-bottom-right-radius: .55rem;
     font-weight: 500; }
 
+@media (max-width: 992px) {
+  .banner {
+    background-position: -25rem center; } }
 @media (max-width: 768px) {
   .nav img {
     max-width: 30vw; }
