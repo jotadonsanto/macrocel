@@ -20,18 +20,18 @@ try {
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'julian.donsanto@w3americas.com';                     // SMTP username
-    $mail->Password   = 'Lomas123';                               // SMTP password
+    $mail->Username   = 'claro@macrocelsa.com';                     // SMTP username
+    $mail->Password   = 'miercoles05';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('julian.donsanto@w3americas.com', $name);
-    $mail->addAddress('julian.donsanto@w3americas.com', 'Receptor');     // Add a recipient
+    $mail->setFrom('claro@macrocelsa.com', $name);
+    $mail->addAddress('claro@macrocelsa.com', 'Receptor');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Haz recibido una nueva consulta de ' .$name;
+    $mail->Subject = 'Haz recibido una nueva consulta de ' .$name 'en Claro Portabilidades'; 
     $mail->Body    = $body;
     $mail->AltBody = $body;
     $mail->CharSet = 'UTF-8';
